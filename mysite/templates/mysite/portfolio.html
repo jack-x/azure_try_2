@@ -1,0 +1,32 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container" style="margin-top:100px">
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="{% static 'mysite/images/YoutubeChannelCard.png' %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Youtube Channel</h5>
+      <p class="card-text">This is the link to my youtube channel where I upload music videos and showcase my editing hobby.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'mysite/images/HackerEarthCode.png' %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HackerEarth Profile</h5>
+      <p class="card-text">Hacker Earth profile where I routinely take part in competitions and practice coding.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'mysite/images/Github.PNG' %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">GitHub profile</h5>
+      <p class="card-text">Link to my github profile</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
